@@ -2,7 +2,7 @@
 
 ## Setting up a new Mac
 
-- Install Developer tools
+### Install Developer tools
 
 ```bash
 xcode-select --install
@@ -10,14 +10,14 @@ xcode-select --install
 
 > Required for git and most other terminal tools to work
 
-- Clone this repo
+### Clone this repo
 
 ```bash
 cd # go to home folder, this is IMPORTANT
 git clone https://github.com/secondary-smiles/.dotfiles $HOME/.dotfiles.git
 ```
 
-- Install OhMyZSH
+### Install OhMyZSH
 
 ```bash
 
@@ -26,7 +26,7 @@ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.
 
 > OhMyZSH is the terminal I'm used to
 
-- Install Brew
+### Install Brew
 
 ```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -34,7 +34,7 @@ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.
 
 > Brew is how I install most of my software
 
-- Install the Brewfile
+### Install the Brewfile
 
 ```bash
 brew bundle --file=$HOME/.dotfiles/core/Brewfile
@@ -42,7 +42,7 @@ brew bundle --file=$HOME/.dotfiles/core/Brewfile
 
 > This is almost certainly going to take a really long time
 
-- Symlink my most important dotfiles
+### Symlink my most important dotfiles
 
 ```bash
 ln -sf $HOME/.dotfiles/core/.zshrc $HOME/.zshrc
@@ -58,7 +58,7 @@ ln -sf $HOME/.dotfiles/core/coc-settings.json $HOME/.config/nvim/coc-settings.js
 
 > These files are how I make things look good in my workflow
 
-- Install Vim-Plug and Vundle
+### Install Vim-Plug and Vundle
 
 ```bash
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
@@ -69,7 +69,7 @@ git clone https://github.com/VundleVim/Vundle.vim.git $HOME/.config/nvim/bundle/
 
 > These are my package managers for Neovim and they make everything look so nice
 
-- Set wallpaper
+### Set wallpaper
 
 ```bash
 osascript -e 'tell application "Finder" to set desktop picture to (do shell script "echo $HOME/.dotfiles/wallpaper/wallpaper.jpg") as POSIX file'
@@ -77,7 +77,7 @@ osascript -e 'tell application "Finder" to set desktop picture to (do shell scri
 
 > Doing it through the terminal makes us so much cooler
 
-- Link my movie_lists folder
+### Link my movie_lists folder
 
 ```bash
 ln -sf $HOME/.custom_lists $HOME/.custom_lists
@@ -85,7 +85,7 @@ ln -sf $HOME/.custom_lists $HOME/.custom_lists
 
 > I keep all the movies I want to watch here
 
-- Install and compile my movie_lists program
+### Install and compile my movie_lists program
 
 ```bash
 git clone https://github.com/secondary-smiles/movie_list.git
