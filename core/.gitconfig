@@ -10,3 +10,5 @@
 	useHttpPath = true
 [core]
 	editor = nvim
+[merge]
+	tool = nvimdiff

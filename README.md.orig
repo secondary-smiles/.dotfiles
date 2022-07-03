@@ -2,7 +2,11 @@
 
 ## Setting up a new Mac
 
+<<<<<<< HEAD
 ### Install Developer tools
+=======
+## Install Developer tools
+>>>>>>> e5b7532a334fb107aab4d02f9bdcccd59126be81
 
 ```bash
 xcode-select --install
@@ -10,14 +14,22 @@ xcode-select --install
 
 > Required for git and most other terminal tools to work
 
+<<<<<<< HEAD
+### Clone this repo
+=======
 ## Clone this repo
+>>>>>>> e5b7532a334fb107aab4d02f9bdcccd59126be81
 
 ```bash
 cd # go to home folder, this is IMPORTANT
 git clone https://github.com/secondary-smiles/.dotfiles $HOME/.dotfiles.git
 ```
 
+<<<<<<< HEAD
+### Install OhMyZSH
+=======
 ## Install OhMyZSH
+>>>>>>> e5b7532a334fb107aab4d02f9bdcccd59126be81
 
 ```bash
 
@@ -26,7 +38,11 @@ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.
 
 > OhMyZSH is the terminal I'm used to
 
+<<<<<<< HEAD
+### Install Brew
+=======
 ## Install Brew
+>>>>>>> e5b7532a334fb107aab4d02f9bdcccd59126be81
 
 ```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -34,7 +50,11 @@ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.
 
 > Brew is how I install most of my software
 
+<<<<<<< HEAD
+### Install the Brewfile
+=======
 ## Install the Brewfile
+>>>>>>> e5b7532a334fb107aab4d02f9bdcccd59126be81
 
 ```bash
 brew bundle --file=$HOME/.dotfiles/core/Brewfile
@@ -42,7 +62,11 @@ brew bundle --file=$HOME/.dotfiles/core/Brewfile
 
 > This is almost certainly going to take a really long time
 
+<<<<<<< HEAD
+### Symlink my most important dotfiles
+=======
 ## Symlink my most important dotfiles
+>>>>>>> e5b7532a334fb107aab4d02f9bdcccd59126be81
 
 ```bash
 ln -sf $HOME/.dotfiles/core/.zshrc $HOME/.zshrc
@@ -58,7 +82,11 @@ ln -sf $HOME/.dotfiles/core/coc-settings.json $HOME/.config/nvim/coc-settings.js
 
 > These files are how I make things look good in my workflow
 
+<<<<<<< HEAD
+### Install Vim-Plug and Vundle
+=======
 ## Install Vim-Plug and Vundle
+>>>>>>> e5b7532a334fb107aab4d02f9bdcccd59126be81
 
 ```bash
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
@@ -69,7 +97,11 @@ git clone https://github.com/VundleVim/Vundle.vim.git $HOME/.config/nvim/bundle/
 
 > These are my package managers for Neovim and they make everything look so nice
 
+<<<<<<< HEAD
+### Set wallpaper
+=======
 ## Set wallpaper
+>>>>>>> e5b7532a334fb107aab4d02f9bdcccd59126be81
 
 ```bash
 osascript -e 'tell application "Finder" to set desktop picture to (do shell script "echo $HOME/.dotfiles/wallpaper/wallpaper.jpg") as POSIX file'
@@ -77,7 +109,11 @@ osascript -e 'tell application "Finder" to set desktop picture to (do shell scri
 
 > Doing it through the terminal makes us so much cooler
 
+<<<<<<< HEAD
+### Link my movie_lists folder
+=======
 ## Link my movie_lists folder
+>>>>>>> e5b7532a334fb107aab4d02f9bdcccd59126be81
 
 ```bash
 ln -sf $HOME/.custom_lists $HOME/.custom_lists
@@ -85,7 +121,11 @@ ln -sf $HOME/.custom_lists $HOME/.custom_lists
 
 > I keep all the movies I want to watch here
 
+<<<<<<< HEAD
+### Install and compile my movie_lists program
+=======
 ## Install and compile my movie_lists program
+>>>>>>> e5b7532a334fb107aab4d02f9bdcccd59126be81
 
 ```bash
 git clone https://github.com/secondary-smiles/movie_list.git
