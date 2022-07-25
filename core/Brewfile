@@ -1,3 +1,4 @@
+tap "bloznelis/tap"
 tap "clintmod/formulas"
 tap "cmacrae/formulae"
 tap "helix-editor/helix"
@@ -25,10 +26,10 @@ brew "binutils"
 brew "bzip2"
 # Extract files from Microsoft cabinet files
 brew "cabextract"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.9"
 # Core application library for C
 brew "glib"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.9"
 # CD/DVD/Blu-ray premastering and recording software
 brew "cdrtools"
 # Cross-platform make
@@ -57,6 +58,8 @@ brew "harfbuzz"
 brew "sdl2"
 # Play, record, convert, and stream audio and video
 brew "ffmpeg"
+# Command-line fuzzy finder written in Go
+brew "fzf"
 # GNU awk utility
 brew "gawk"
 # GIF image/animation creator/editor
@@ -129,6 +132,8 @@ brew "qemu"
 brew "ripgrep"
 # Rust toolchain installer
 brew "rustup-init"
+# Command-line interface for https://speedtest.net bandwidth tests
+brew "speedtest-cli"
 # Add a public key to a remote machine's authorized_keys file
 brew "ssh-copy-id"
 # Programmatically correct mistyped console commands
@@ -147,6 +152,8 @@ brew "wimlib"
 brew "yarn"
 # Fish shell like syntax highlighting for zsh
 brew "zsh-syntax-highlighting"
+# Minimal, terminal based typing speed tester
+brew "bloznelis/tap/typioca"
 # A minimal status bar for macOS.
 brew "cmacrae/formulae/spacebar"
 # A cli to browse and watch anime. This tool scrapes the site gogoanime.
@@ -183,6 +190,8 @@ cask "epic-games"
 cask "fig"
 cask "font-fira-code"
 cask "git-credential-manager-core"
+# Git client focusing on productivity
+cask "gitkraken"
 # Game development engine
 cask "godot"
 # Web browser

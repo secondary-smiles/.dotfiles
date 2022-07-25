@@ -92,7 +92,7 @@ lua << END
     }
 
     -- Nvim-startup-theme
-    require'alpha'.setup(require'alpha.themes.startify'.config)
+    require 'alpha'.setup(require'alpha.themes.startify'.config)
 
     -- Indent-line-marks
     require("indent_blankline").setup {
