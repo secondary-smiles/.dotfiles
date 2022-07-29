@@ -126,6 +126,8 @@ brew "pkcs11-helper"
 brew "qt@5"
 # Python bindings for v5 of Qt
 brew "pyqt@5"
+# Python interface to Tcl/Tk
+brew "python-tk@3.9"
 # Emulator for x86 and PowerPC
 brew "qemu"
 # Search tool like grep and The Silver Searcher
@@ -138,6 +140,8 @@ brew "speedtest-cli"
 brew "ssh-copy-id"
 # Programmatically correct mistyped console commands
 brew "thefuck"
+# NetBSD's FTP client
+brew "tnftp"
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
 # Collection of Linux utilities
@@ -180,6 +184,8 @@ cask "brackets"
 cask "cakebrew"
 # Jailbreak for iPhone 5s through iPhone X, iOS 12.0 and up
 cask "checkra1n"
+# BitTorrent client
+cask "deluge"
 # Voice and text chat software
 cask "discord"
 # App to build and share containerized applications and microservices
@@ -189,6 +195,8 @@ cask "epic-games"
 # Reimagine your terminal
 cask "fig"
 cask "font-fira-code"
+# Software reverse engineering (SRE) suite of tools
+cask "ghidra"
 cask "git-credential-manager-core"
 # Git client focusing on productivity
 cask "gitkraken"
@@ -210,12 +218,18 @@ cask "jetbrains-toolbox"
 cask "mark-text"
 # Open source implementation of Microsoft's .NET Framework
 cask "mono-mdk-for-visual-studio"
+# VPN client
+cask "mullvadvpn"
 # Cloud gaming platform
 cask "nvidia-geforce-now"
 # Open-source software for live streaming and screen recording
 cask "obs"
 # Retro video game emulation
 cask "openemu"
+# Desktop virtualization software
+cask "parallels"
+# Peer to peer Bitorrent client
+cask "qbittorrent"
 # Move and resize windows using keyboard shortcuts or snap areas
 cask "rectangle"
 # Music streaming service
@@ -226,6 +240,8 @@ cask "steam"
 cask "temurin"
 # Unpacks archive files
 cask "the-unarchiver"
+# Web browser focusing on security
+cask "tor-browser"
 # Run commands and display their output on the desktop
 cask "ubersicht"
 # Management tool for Unity
@@ -240,10 +256,10 @@ cask "vlc"
 cask "zoom"
 mas "AdGuard for Safari", id: 1440147259
 mas "Dark Reader for Safari", id: 1438243180
-mas "DuckDuckGo Privacy Essentials", id: 1482920575
+mas "DuckDuckGo Privacy for Safari", id: 1482920575
 mas "Focus", id: 1554411065
-mas "Honey", id: 1472777122
 mas "Keyword Search", id: 1558453954
+mas "PayPal Honey", id: 1472777122
 mas "Pixelmator Pro", id: 1289583905
 mas "Wappalyzer", id: 1520333300
 mas "Xcode", id: 497799835
