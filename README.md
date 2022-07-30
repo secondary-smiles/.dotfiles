@@ -26,6 +26,11 @@ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.
 
 > OhMyZSH is the terminal I'm used to
 
+### Install Rosetta
+```bash
+sudo softwareupdate --install-rosetta
+```
+
 ### Install Brew
 
 ```bash
