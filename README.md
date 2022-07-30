@@ -14,7 +14,7 @@ xcode-select --install
 
 ```bash
 cd # go to home folder, this is IMPORTANT
-git clone https://github.com/secondary-smiles/.dotfiles $HOME/.dotfiles.git
+git clone https://github.com/secondary-smiles/.dotfiles.git $HOME/.dotfiles
 ```
 
 ### Install OhMyZSH
