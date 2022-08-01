@@ -1,7 +1,7 @@
 [user]
 	name = secondary-smiles
 	email = shavkinder@gmail.com
-	signingKey = 8C2257F8221B273A189EDF60A14056795C7B094B
+	signingKey = 2FF1BFDF5975E1BF67E300323C6466E1E2073517
 [init]
 	defaultBranch = master
 [core]
