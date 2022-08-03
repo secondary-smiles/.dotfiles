@@ -1,0 +1,45 @@
+#!/bin/sh
+
+TORRENT_NAME=$(gum input --placeholder "Name the torrent")
+while true; do
+    gum confirm "Name torrent $TORRENT_NAME?" --negative "Choose another name" && mkdir $TORRENT_NAME && break || TORRENT_NAME=$(gum input --placeholder "Name the torrent")
+done
+
+while true; do
+    echo "Choose files to add to torrent"
+    FILES_ADD=$(exa | gum choose --no-limit)
+    FILES_ADD_LEN=$(echo "$FILES_SIG" | wc -l)
+
+    gum confirm "Continue?" --negative "Rechoose" && echo "Alright" && break || echo "Going back.."
+done
+
+while IFS= read -r file; do
+    mv $file $TORRENT_NAME
+done <<<"$FILES_ADD"
+
+cd $TORRENT_NAME
+
+while true; do
+    echo "Choose files to signature"
+    FILES_SIG=$(exa | gum choose --no-limit)
+    FILES_SIG_LEN=$(echo "$FILES_SIG" | wc -l)
+
+    gum confirm "Continue?" && echo "Alright" && break || echo "Going back.."
+done
+
+gum spin --spinner line --title "Hashing files.." -- gen $FILES_SIG
+
+echo "Remove metadata from files"
+while true; do
+    gum confirm "Remove metadata for all files?" --negative="Choose my own" && FILES_META=$(exa) && FILES_META_LEN=$(echo "$FILES_META" | wc -l) || FILES_META=$(exa | gum choose --no-limit) && FILES_META_LEN=$(echo "$FILES_META" | wc -l)
+    gum confirm "Continue?" && echo "Alright" && break || echo "Going back.."
+
+    while IFS= read -r file; do
+        gum spin --spinner line --title "Removing metadata for $file" -- exiftool -all= -api largefilesupport=1 -overwrite_original $file || true
+    done <<<"$FILES_META"
+done
+
+cd ../
+mktorrent -a "https://inferno.demonoid.is/announce" -a "udp://tracker.openbittorrent.com:6969" $TORRENT_NAME
+
+gum style "Done" --foreground 176

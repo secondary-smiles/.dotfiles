@@ -1,0 +1,82 @@
+#!/usr/bin/env python3
+
+import random
+import hashlib
+import sys
+
+from PIL import Image
+from termcolor import colored
+
+
+x = 25
+y = 25
+
+
+def hash_file(filename):
+    """"This function returns the SHA-1 hash
+    of the file passed into it"""
+
+    # make a hash object
+    h = hashlib.sha1()
+
+    # open file for reading in binary mode
+    with open(filename, 'rb') as file:
+
+        # loop till the end of the file
+        chunk = 0
+        while chunk != b'':
+            # read only 1024 bytes at a time
+            chunk = file.read(1024)
+            h.update(chunk)
+
+    # return the hex representation of digest
+    return h.hexdigest()
+
+
+def hash_str(string):
+    return hashlib.sha1(string.encode()).hexdigest()
+
+
+def run(file):
+    sys.stdout.flush()
+    try:
+        image = []
+        hash = hash_file(file)
+
+        for i in range(15):
+            hash += hash_str(hash)
+
+        i = 0
+        for s in hash[:625]:
+            if i >= x*y:
+                break
+            random.seed(s)
+            r = random.randint(0, 255)
+            g = random.randint(0, 255)
+            b = random.randint(0, 255)
+            image.append((r, g, b))
+            i += 1
+
+        img = Image.new('RGB', (x, y))
+        img.putdata(image)
+        name = file.split(".")[:-1]
+        if len(name) > 1:
+            s = '.'
+            imgname = f"{s.join(name)}_sig.jpg"
+        else:
+            imgname = f"{file}_sig.jpg"
+        img.save(imgname)
+        print(colored("success", 'green'))
+
+    except Exception as e:
+        print(colored(f"failed -- {e}", 'red'))
+
+if len(sys.argv) < 2:
+    print(colored("Please supply at least one file", 'red'))
+    exit()
+
+for file in sys.argv[1:]:
+    print(colored(file + "..", 'green'), end=" ")
+    run(file)
+    
+print(colored("Done!", 'green'))
