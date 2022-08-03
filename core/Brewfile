@@ -137,3 +137,12 @@ cask "utm"
 cask "visual-studio-code"
 cask "vlc"
 cask "zoom"
+mas "AdGuard for Safari", id: 1440147259
+mas "Dark Reader for Safari", id: 1438243180
+mas "DuckDuckGo Privacy for Safari", id: 1482920575
+mas "Focus", id: 1554411065
+mas "Keyword Search", id: 1558453954
+mas "PayPal Honey", id: 1472777122
+mas "Pixelmator Pro", id: 1289583905
+mas "Wappalyzer", id: 1520333300
+mas "Xcode", id: 497799835
