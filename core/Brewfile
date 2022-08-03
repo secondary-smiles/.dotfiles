@@ -12,254 +12,128 @@ tap "iamchokerman/ani-cli"
 tap "koekeishiya/formulae"
 tap "microsoft/git"
 tap "sidneys/homebrew"
-# Library for manipulating PNG images
 brew "libpng"
-# Arduino command-line interface
 brew "arduino-cli"
-# Download with resuming and segmented downloading
 brew "aria2"
-# Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
-# GNU binary tools for native development
 brew "binutils"
-# Freely available high-quality data compressor
 brew "bzip2"
-# Extract files from Microsoft cabinet files
 brew "cabextract"
-# Core application library for C
 brew "glib"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.9"
-# CD/DVD/Blu-ray premastering and recording software
-brew "cdrtools"
-# Cross-platform make
-brew "cmake"
-# GNU File, Shell, and Text utilities
-brew "coreutils"
-# Configurable talking characters in ASCII art
-brew "cowsay"
-# Secure runtime for JavaScript and TypeScript
-brew "deno"
-# Pack, ship and run any application as a lightweight container
-brew "docker"
-# .NET Core
-brew "dotnet"
-# Modern replacement for 'ls'
-brew "exa"
-# Simple, fast and user-friendly alternative to find
-brew "fd"
-# GNU Transport Layer Security (TLS) Library
-brew "gnutls"
-# Generate introspection data for GObject libraries
-brew "gobject-introspection"
-# OpenType text shaping engine
 brew "harfbuzz"
-# Low-level access to audio, keyboard, mouse, joystick, and graphics
 brew "sdl2"
-# Play, record, convert, and stream audio and video
+brew "cataclysm"
+brew "cdrtools"
+brew "cmake"
+brew "coreutils"
+brew "cowsay"
+brew "deno"
+brew "docker"
+brew "dotnet"
+brew "exa"
+brew "exiftool"
+brew "fd"
+brew "gnutls"
 brew "ffmpeg"
-# Command-line fuzzy finder written in Go
 brew "fzf"
-# GNU awk utility
 brew "gawk"
-# GIF image/animation creator/editor
 brew "gifsicle"
-# Render markdown on the CLI
 brew "glow"
-# GNU Pretty Good Privacy (PGP) package
 brew "gnupg"
-# Open source programming language to build simple/reliable/efficient software
 brew "go"
-# Ping, but with a graph
+brew "python@3.9"
+brew "gobject-introspection"
 brew "gping"
-# Development kit for the Java programming language
 brew "openjdk"
-# Open-source build automation tool based on the Groovy and Kotlin DSL
 brew "gradle"
-# File format designed to store large amounts of data
+brew "gum"
 brew "hdf5"
-# Text-based UI library
 brew "ncurses"
-# Improved top (interactive process viewer)
 brew "htop"
-# Interpreted, interactive, object-oriented programming language
 brew "python@3.10"
-# User-friendly cURL replacement (command-line HTTP client)
 brew "httpie"
-# Command-line benchmarking tool
 brew "hyperfine"
-# Database of common MIME types
 brew "shared-mime-info"
-# Tools and libraries to manipulate images in many formats
 brew "imagemagick"
-# Lightweight and flexible command-line JSON processor
 brew "jq"
-# Implementation of the file(1) command
 brew "libmagic"
-# General purpose TCP-IP emulator
 brew "libslirp"
-# Mac App Store command-line interface
+brew "lua"
 brew "mas"
-# Video processing framework with simplicity in mind
+brew "mktorrent"
 brew "vapoursynth"
-# Fork of youtube-dl with additional features and fixes
 brew "yt-dlp"
-# Media player based on MPlayer and mplayer2
 brew "mpv"
-# Netwide Assembler (NASM) is an 80x86 assembler
 brew "nasm"
-# Fast, highly customisable system info script
 brew "neofetch"
-# Parser generator tool and incremental parsing library
 brew "tree-sitter"
-# Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
-# Platform built on V8 to build network applications
 brew "node"
-# Platform built on V8 to build network applications
 brew "node@14"
-# Cryptography and SSL/TLS Toolkit
 brew "openssl@3"
-# Library to simplify the interaction with PKCS#11
 brew "pkcs11-helper"
-# Cross-platform application and UI framework
 brew "qt@5"
-# Python bindings for v5 of Qt
 brew "pyqt@5"
-# Python interface to Tcl/Tk
 brew "python-tk@3.9"
-# Emulator for x86 and PowerPC
 brew "qemu"
-# Search tool like grep and The Silver Searcher
 brew "ripgrep"
-# Rust toolchain installer
 brew "rustup-init"
-# Command-line interface for https://speedtest.net bandwidth tests
 brew "speedtest-cli"
-# Add a public key to a remote machine's authorized_keys file
 brew "ssh-copy-id"
-# Programmatically correct mistyped console commands
+brew "starship"
 brew "thefuck"
-# NetBSD's FTP client
 brew "tnftp"
-# Display directories as trees (with optional color/HTML output)
 brew "tree"
-# Collection of Linux utilities
 brew "util-linux"
-# Image processing library
 brew "vips"
-# Internet file retriever
 brew "wget"
-# Library to create, extract, and modify Windows Imaging files
 brew "wimlib"
-# JavaScript package manager
 brew "yarn"
-# Fish shell like syntax highlighting for zsh
 brew "zsh-syntax-highlighting"
-# Minimal, terminal based typing speed tester
 brew "bloznelis/tap/typioca"
-# A minimal status bar for macOS.
 brew "cmacrae/formulae/spacebar"
-# A cli to browse and watch anime. This tool scrapes the site gogoanime.
 brew "iamchokerman/ani-cli/ani-cli"
-# Collection of apps and services for photography, design, video, web, and UX
 cask "adobe-creative-cloud"
-# Automatic tiling window manager similar to xmonad
 cask "amethyst"
-# Application uninstaller
 cask "appcleaner"
-# Electronics prototyping platform
 cask "arduino"
-# Multi-track audio editor and recorder
 cask "audacity"
-# Tool to flash OS images to SD cards & USB drives
 cask "balenaetcher"
-# Installer for BetterDiscord
 cask "betterdiscord-installer"
-# 3D creation suite
 cask "blender"
-# Open-source code editor for web-developement
 cask "brackets"
-# GUI app for Homebrew
 cask "cakebrew"
-# Jailbreak for iPhone 5s through iPhone X, iOS 12.0 and up
 cask "checkra1n"
-# BitTorrent client
-cask "deluge"
-# Voice and text chat software
 cask "discord"
-# App to build and share containerized applications and microservices
-cask "docker"
-# Launcher for *Epic Games* games
 cask "epic-games"
-# Reimagine your terminal
 cask "fig"
 cask "font-fira-code"
-# Software reverse engineering (SRE) suite of tools
 cask "ghidra"
 cask "git-credential-manager-core"
-# Git client focusing on productivity
 cask "gitkraken"
-# Game development engine
 cask "godot"
-# Web browser
 cask "google-chrome"
-# Free and open-source media player
 cask "iina"
-# HTTP and GraphQL Client
 cask "insomnia"
-# Game client for itch.io
 cask "itch"
-# Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2"
-# JetBrains tools manager
 cask "jetbrains-toolbox"
-# Simple and elegant markdown editor
 cask "mark-text"
-# Open source implementation of Microsoft's .NET Framework
+cask "min"
 cask "mono-mdk-for-visual-studio"
-# VPN client
 cask "mullvadvpn"
-# Cloud gaming platform
 cask "nvidia-geforce-now"
-# Open-source software for live streaming and screen recording
 cask "obs"
-# Retro video game emulation
 cask "openemu"
-# Desktop virtualization software
-cask "parallels"
-# Peer to peer Bitorrent client
 cask "qbittorrent"
-# Move and resize windows using keyboard shortcuts or snap areas
 cask "rectangle"
-# Music streaming service
 cask "spotify"
-# Video game digital distribution service
 cask "steam"
-# JDK from the Eclipse Foundation (Adoptium)
 cask "temurin"
-# Unpacks archive files
 cask "the-unarchiver"
-# Web browser focusing on security
 cask "tor-browser"
-# Run commands and display their output on the desktop
-cask "ubersicht"
-# Management tool for Unity
 cask "unity-hub"
-# Virtual machines UI using QEMU
 cask "utm"
-# Open-source code editor
 cask "visual-studio-code"
-# Multimedia player
 cask "vlc"
-# Video communication and virtual meeting platform
 cask "zoom"
-mas "AdGuard for Safari", id: 1440147259
-mas "Dark Reader for Safari", id: 1438243180
-mas "DuckDuckGo Privacy for Safari", id: 1482920575
-mas "Focus", id: 1554411065
-mas "Keyword Search", id: 1558453954
-mas "PayPal Honey", id: 1472777122
-mas "Pixelmator Pro", id: 1289583905
-mas "Wappalyzer", id: 1520333300
-mas "Xcode", id: 497799835
